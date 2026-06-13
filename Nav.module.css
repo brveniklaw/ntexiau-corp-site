@@ -1,0 +1,17 @@
+import styles from './Thesis.module.css'
+
+export default function Thesis() {
+  return (
+    <>
+      <section className={styles.thesis} aria-label="Founding principle">
+        <div className="eyebrow">Our Founding Principle</div>
+        <p>
+          Every individual carries intelligence that the expanding economy needs.{' '}
+          <strong>Economic Authorship</strong> is the framework that ensures no one is left a
+          passive spectator — in education, in work, or in life.
+        </p>
+      </section>
+      <div className="divider"></div>
+    </>
+  )
+}

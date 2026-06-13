@@ -1,0 +1,36 @@
+import styles from './WeaveStrip.module.css'
+
+const paths = [
+  'AI Learning & Fluency',
+  'Professional Development',
+  'Life Coaching',
+  'Education Advising',
+  'Legal Information',
+  'Career Re-entry',
+  'Entrepreneurship',
+  'Finding Your Space',
+]
+
+export default function WeaveStrip() {
+  return (
+    <section className={styles.weaveStrip} aria-label="Find your path" id="weave">
+      <div className="eyebrow">You Are in the Right Place</div>
+      <h2>Let Us Help You <em>Weave Your Future</em></h2>
+      <p>
+        Whatever brought you here — a job loss, a degree that hasn't opened doors, a fear of
+        being left behind, or a parent's quiet worry — IntexiaU has a path for you. The tools,
+        the guidance, and the community are already being built. You just have to step in.
+      </p>
+
+      <div className={styles.paths}>
+        {paths.map((path) => (
+          <div className={styles.path} key={path}>
+            <span>→</span> {path}
+          </div>
+        ))}
+      </div>
+
+      <a href="#investors" className="empathy-cta">Start the Conversation →</a>
+    </section>
+  )
+}

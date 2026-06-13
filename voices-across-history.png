@@ -1,0 +1,30 @@
+import styles from './Ticker.module.css'
+
+const items = [
+  'Economic Authorship',
+  'AI-Native Education',
+  'Legal Intelligence',
+  'Civic Learning',
+  'Workforce Development',
+  'Agentic Platforms',
+  'Human + AI',
+  'Abundance by Design',
+]
+
+export default function Ticker() {
+  // Duplicate items for a seamless loop
+  const doubled = [...items, ...items]
+
+  return (
+    <div className={styles.tickerWrap}>
+      <div className={styles.ticker}>
+        {doubled.map((item, i) => (
+          <span key={i} className={styles.item}>
+            {item}
+            <span className={styles.dot}>·</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}

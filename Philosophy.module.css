@@ -1,0 +1,90 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 64px;
+  background: rgba(246,244,240,0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.logoWordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  cursor: pointer;
+}
+.logoMain {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+  line-height: 1;
+}
+.logoCorp {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 3px;
+  padding-left: 2px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.nav ul li a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav ul li a:hover {
+  color: var(--blue);
+}
+
+.navCta {
+  background: linear-gradient(135deg, var(--blue), var(--purple)) !important;
+  color: #fff !important;
+  padding: 9px 22px;
+  border-radius: 3px;
+  font-weight: 600 !important;
+  letter-spacing: 1.2px !important;
+  box-shadow: 0 4px 16px rgba(42,107,194,0.28);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .logoMain { font-size: 22px; }
+  .logoCorp { font-size: 8px; letter-spacing: 3px; }
+  .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    justify-content: center;
+  }
+  .nav ul li a { font-size: 10px; letter-spacing: 1px; }
+  .navCta { padding: 7px 14px; }
+}
+
+@media (max-width: 480px) {
+  .nav ul li:not(:last-child) {
+    display: none;
+  }
+}

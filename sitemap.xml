@@ -1,0 +1,60 @@
+import styles from './Investors.module.css'
+
+export default function Investors() {
+  return (
+    <section className={styles.investors} aria-label="Investor relations" id="investors">
+      <div className={styles.inner}>
+
+        <div className="eyebrow">IntexiaU Ventures</div>
+        <h2>Built for Those Who See What's Coming</h2>
+        <p className={styles.lead}>
+          The AI economy is not a future event — it is happening now. IntexiaU Corp is building the{' '}
+          <em>infrastructure layer</em> for how universities, medical organizations, media companies,
+          and entrepreneurs will operate inside it. If you are looking for where to enter, we would
+          love to have that conversation.
+        </p>
+
+        <div className={styles.opportunityGrid}>
+          <div className={styles.oppCard}>
+            <span className={styles.oppIcon}>🎓</span>
+            <h4>University &amp; Education Operations</h4>
+            <p>AI-native platforms purpose-built to operate accredited universities and learning institutions — from enrollment and curriculum delivery to workforce outcomes and credentialing.</p>
+          </div>
+          <div className={styles.oppCard}>
+            <span className={styles.oppIcon}>🏥</span>
+            <h4>Medical Office &amp; Healthcare</h4>
+            <p>Intelligent platforms designed for medical offices and healthcare organizations — streamlining patient communication, legal information, administrative workflow, and care coordination.</p>
+          </div>
+          <div className={styles.oppCard}>
+            <span className={styles.oppIcon}>📡</span>
+            <h4>Media &amp; Publishing Organizations</h4>
+            <p>AI-native media infrastructure for editorial teams, newsletters, broadcast organizations, and content channels — built around the Brvenik Brief Media model.</p>
+          </div>
+        </div>
+
+        <div className={styles.statement}>
+          <p>We are not here to pitch a deck. We are here to build something that lasts — and we are looking for partners who understand that the platforms shaping the AI economy are being built right now, not five years from now.</p>
+          <span className={styles.attribution}>Andrea Brvenik — Founder &amp; CEO, IntexiaU Corp</span>
+        </div>
+
+        <div className={styles.contactWrap}>
+          <h3>Let's Organize a Conversation</h3>
+          <p className={styles.formSub}>
+            No pitch decks required. No forms to fill. Just reach out directly and we will find a
+            time to talk — whether you are an investor, a potential partner, or simply curious
+            about what is being built.
+          </p>
+
+          <a href="mailto:investors@intexiaU.com" className="empathy-cta">
+            investors@intexiaU.com
+          </a>
+
+          <p className={styles.note}>
+            We review every message personally. You will hear back within 48 hours.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  )
+}

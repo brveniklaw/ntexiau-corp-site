@@ -1,0 +1,61 @@
+.footer {
+  padding: 36px 64px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--faint);
+  flex-wrap: wrap;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+  background: rgba(246,244,240,0.75);
+}
+
+.footerWordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.footerMain {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+.footerCorp {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+}
+.links a {
+  color: #b0a898;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.links a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 28px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
